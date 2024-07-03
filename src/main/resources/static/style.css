@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.row {
+	box-sizing: border-box;
+	float: left;
+	width: 100%;
+}
+
+.cell {
+	box-sizing: border-box;
+	float: left;
+	
+	width: 125px;
+	height: 125px;
+	border-width: 1px;
+	border-style: solid;
+	
+	background-size: 125px 125px;
+}
+
+.treasurePicture {
+	
+	background-color: yellow;
+}
+
+.skullPicture {
+	
+	background-color: black;
+}
+
+.emptyPicture {
+	
+	background-color: grey;
+}

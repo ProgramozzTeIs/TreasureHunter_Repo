@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Result Page</title>
+	</head>
+	<body>
+	
+		<div th:if="${userDto != null}">
+		
+			<h2 th:text="${userDto.getName()}"></h2>
+			
+			<p th:if="${userDto.getWin() == true}">Treasure is found! You won the game, Congratulation!</p>
+			<p th:if="${userDto.getWin() == false}">Game Over!</p>
+			
+			<p th:if="${userDto.getRecordSteps() != null}" th:text="${'Your best shot was: ' + userDto.getRecordSteps() + ' steps!'}"></p>
+		</div>
+		
+		
+		<form action="/" method="get">
+			<input type="submit" value="Login and try again!" />
+		</form>
+	</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Treasure Hunter Game</title>
+		<link rel="stylesheet" th:href="@{/style.css}" />
+		<script type="text/javascript" th:src="@{/game.js}"></script>
+	</head>
+	<body>
+	
+		<p th:text="'Good luck ' + ${userDto.getName() + ' Hunter!'}"></p>
+		<p th:if="${userDto.getRecordSteps() != null}" th:text="${'Your best shot was: ' + userDto.getRecordSteps() + ' steps!'}"></p>
+		<p id="clickCntrBoxId">Steps: 0</p>
+		<p id="lifesBoxId">Lifes: 2</p>
+	
+	
+		<div class="row">
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+	
+		<div class="row">
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+		
+		<div class="row">
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+		
+		<div class="row">
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+		
+		<div class="row">
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+	
+	
+		<form style="display: none" action="/user/end" method="get">
+			<input type="number" name="uid" th:value="${userDto.getId()}"/>
+			
+			<input id="formWinId" type="number" name="gamewin" />
+			
+			<input id="formStepsId" type="number" name="gamesteps" />
+			
+			
+			<input id="formSubmitButtonId" type="submit" />
+		</form>		
+	
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
