@@ -11,7 +11,7 @@
 	<groupId>pti</groupId>
 	<artifactId>sb_treasurehunter_mvc</artifactId>
 	<version>1</version>
-	<name>treasurehunter</name>
+	<name>sb_treasurehunter_mvc</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
