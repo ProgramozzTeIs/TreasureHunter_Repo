@@ -7,9 +7,9 @@
 	<session-factory>
 		<!-- Database connection settings -->
 		<property name="connection.driver_class">org.postgresql.Driver</property>
-		<property name="connection.url">jdbc:postgresql://localhost:5432/postgres</property>
-		<property name="connection.username">postgres</property>
-		<property name="connection.password">root</property>
+		<property name="connection.url">jdbc:postgresql://dpg-cq2g1gl6l47c73b4vss0-a/treasurehunterdb</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">My2ghWJ8soB4Y2UL8HTDIl1rd7Aw6i7X</property>
 		
 		<mapping class="pti.sb_treasurehunter_mvc.model.User" />
 	</session-factory>
